@@ -1,0 +1,22 @@
+name: Publish Mod
+
+on: 
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: GreenTF/upload-thunderstore-package@v4
+        with:
+          namespace: Malarzawka
+          description: u can skip this one 
+          token: ${{ secrets.THUNDERSTORE_TOKEN }}
+          name: malarzawka-modpack
+          version: $GITHUB_REF_NAME
+          community: lethal-company
+          repo: thunderstore.io
+          categories: |
+            Modpacks

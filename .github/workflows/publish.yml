@@ -1,8 +1,9 @@
 name: Publish Mod
 
-on: 
-  release:
-    types: [published]
+on:
+  push:
+    tags:
+      - '*'
 
 jobs:
   publish:

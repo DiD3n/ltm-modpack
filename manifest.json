@@ -1,10 +1,10 @@
 {
     "name": "malarzawka-modpack",
     "version_number": "1.0.0",
-    "website_url": "https://github.com/DiD3n/ltm-modpack",
     "description": "u can skip this one",
+    "website_url": "https://github.com/DiD3n/ltm-modpack",
     "dependencies": [
-        "2018-LC_API-1.4.2",
+        "2018-LC_A1-1.4.2",
         "BepInEx-BepInExPack-5.4.2100",
         "5Bit-VoiceHUD-1.0.4",
         "anormaltwig-LateCompany-1.0.4",
